@@ -47,7 +47,7 @@ public class ServerGameScreen extends Group{
 	
 	@Override
 	public void act(float delta) {
-		car.rotateBy(rotation/(velocity/3f));
+		car.rotateBy(-velocity*rotation/12f);
 		car.moveBy(velocity * MathUtils.sinDeg(-car.getRotation()), velocity * MathUtils.cosDeg(car.getRotation()));
 		super.act(delta);
 	}

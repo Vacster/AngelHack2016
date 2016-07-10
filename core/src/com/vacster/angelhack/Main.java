@@ -81,6 +81,7 @@ public class Main extends ApplicationAdapter{
 		TCPport = -1;
 		UDPport = -1;
 		IP = null;
+		
 		server = null;
 		client = null;
 		changeScreen(Screens.MAINMENU);
